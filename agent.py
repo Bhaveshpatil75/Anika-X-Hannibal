@@ -14,8 +14,6 @@ load_dotenv()
 class Assistant(Agent):
     def __init__(self) -> None:
         super().__init__(
-            __name__="Anika",
-            __description="Head of crime analytics department at Vought International.",
             instructions=AGENT_INSTRUCTION,
             llm=google.beta.realtime.RealtimeModel(
             voice="Aoede",
